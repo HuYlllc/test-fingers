@@ -1,4 +1,4 @@
-me: 网宿
+- name: 网宿
   rule:
     - regexps:
         header:
