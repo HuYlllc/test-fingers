@@ -48,13 +48,16 @@
     part: ""
     vendor: ""
     product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1087"
   rule:
-    - regexps:
-        body:
-            - cdn.aliyuncs.com
-        header:
-            - cdn.aliyuncs.com
-            - x-swift-cachetime
+    - version: _
+      regexps:
+        cert:
+            - alicdn.com
+            - tbcdn.cn
 - name: 加速乐CDN
   attributes:
     part: ""
@@ -144,8 +147,13 @@
     part: ""
     vendor: ""
     product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1087"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         cert:
             - alicdn.com
             - tbcdn.cn
