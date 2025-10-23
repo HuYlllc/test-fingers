@@ -71,8 +71,13 @@
     part: ""
     vendor: ""
     product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1080"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         body:
             - apps.bdimg.com
             - libs.baidu.com
