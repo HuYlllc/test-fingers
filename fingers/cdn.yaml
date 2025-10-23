@@ -150,8 +150,13 @@
     part: ""
     vendor: ""
     product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1998"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         cert:
             - ctcdn.cn
         header:
