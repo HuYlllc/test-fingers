@@ -120,8 +120,12 @@
     part: ""
     vendor: ""
     product: ""
+  protocol: http
+  default_port:
+    - "80"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         header:
             - __jsluid
 - name: 腾讯云CDN
