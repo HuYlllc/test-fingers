@@ -1,0 +1,11 @@
+name: 泛微 e-cology
+attributes:
+    part: ""
+    vendor: ""
+    product: ""
+protocol: http
+default_port:
+    - "80"
+focus: true
+rule:
+    - version: _
