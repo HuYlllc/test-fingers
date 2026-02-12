@@ -1,89 +1,175 @@
 - name: 网宿
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         header:
-          - WS CDN Server
+            - WS CDN Server
 - name: alloyui
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         body:
-          - cdn.alloyui.com
+            - cdn.alloyui.com
 - name: cdn-cache-server
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         header:
-          - Cdn Cache Server
+            - Cdn Cache Server
 - name: fastly cdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         body:
-          - fastcdn.org
+            - fastcdn.org
 - name: gocdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         header:
-          - GOCDN
+            - GOCDN
 - name: 阿里云cdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1087"
   rule:
-    - regexps:
-        body:
-          - cdn.aliyuncs.com
-        header:
-          - cdn.aliyuncs.com
-          - x-swift-cachetime
+    - version: _
+      regexps:
+        cert:
+            - alicdn.com
+            - tbcdn.cn
 - name: 加速乐CDN
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
-        header:
-          - jiasule
         body:
-          - notice-jiasule
+            - notice-jiasule
+        header:
+            - jiasule
 - name: 百度cdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1080"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         body:
-          - apps.bdimg.com
-          - libs.baidu.com
+            - apps.bdimg.com
+            - libs.baidu.com
         header:
-          - libs.baidu.com
+            - libs.baidu.com
 - name: powercdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         header:
-          - Powercdn
+            - Powercdn
 - name: 七牛cdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
+  protocol: http
+  default_port:
+    - "80"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         header:
-          - cdn.staticfile.org
-          - X-Qiniu-Zone
+            - cdn.staticfile.org
+            - x-qiniu-zone
 - name: maxcdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
         header:
-          - NetDNA
+            - NetDNA
 - name: 加速乐
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
+  protocol: http
+  default_port:
+    - "80"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         header:
-          - __jsluid
+            - __jsluid
 - name: 腾讯云CDN
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
   rule:
     - regexps:
-        header:
-          - X-NWS-LOG-UUID
         cert:
-          - cdn.myqcloud.com
+            - cdn.myqcloud.com
+        header:
+            - X-NWS-LOG-UUID
 - name: 阿里云cdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1087"
   rule:
-    - regexps:
+    - version: _
+      regexps:
         cert:
-          - alicdn.com
-          - tbcdn.cn
+            - alicdn.com
+            - tbcdn.cn
 - name: 天翼云cdn
+  attributes:
+    part: ""
+    vendor: ""
+    product: ""
+  protocol: http
+  default_port:
+    - "80"
+    - "1998"
   rule:
-    - regexps:
-        header:
-          - hotload rechange server uri format error
+    - version: _
+      regexps:
         cert:
-          - ctcdn.cn
+            - ctcdn.cn
+        header:
+            - hotload rechange server uri format error
